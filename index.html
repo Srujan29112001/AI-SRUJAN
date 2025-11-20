@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Srujan | AI Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+/* === Clamp project descriptions to 3 lines === */
+#projects .project-card .project-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;              /* future spec */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;    /* prevent layout breaking on long strings */
+}
+</style></head>
+<body>
+<canvas class="particle-canvas-fixed" id="particle-canvas"></canvas>
+<div class="loader" id="loader">
+<div class="loader-content">
+<div class="loader-cube">
+<div class="face"></div>
+<div class="face"></div>
+<div class="face"></div>
+<div class="face"></div>
+<div class="face"></div>
+<div class="face"></div>
+</div>
+<p class="loader-text">Initializing AI Systems...</p>
+<div class="loader-progress"></div>
+</div>
+</div>
+<div class="progress-bar" id="progress-bar"></div>
+<div class="cursor-trail" id="cursor-trail"></div>
+<nav class="navbar" id="navbar">
+<div class="container nav-container">
+<div class="nav-brand">
+<img alt="Logo" class="logo" src="Images/Bestlogo.png"/>
+</div>
+<ul class="nav-menu" id="nav-menu">
+<li><a class="nav-link active" href="#home">Home</a></li>
+<li><a class="nav-link" href="#skills">Skills</a></li>
+<li><a class="nav-link" href="#tech-stack">Tech Stack</a></li>
+<li><a class="nav-link" href="#projects">Projects</a></li>
+<li><a class="nav-link" href="#certifications">Certifications</a></li>
+<li><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+<div class="nav-extras">
+<a class="btn-back-home" href="https://srujan29112001.github.io/SRUJAN/">
+<i class="fas fa-home"></i>
+<span>Main</span>
+</a>
+<button class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></button>
+<button class="motion-toggle" id="motion-toggle"><i class="fas fa-eye"></i></button>
+<div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+</nav>
+<section class="hero" id="home">
+<div class="container hero-content">
+<div class="hero-inner">
+<div class="hero-text">
+<p class="hero-greeting">Welcome to my AI Universe</p>
+<h1 class="hero-name">
+<span class="gradient-text-ai glitch" data-text="Artificial Intelligence">Artificial Intelligence</span>
+</h1>
+<div class="hero-subtitle">
+<span id="typing-text"></span>
+<span class="cursor">|</span>
+</div>
+<p class="hero-tagline">~Pioneering AI for Earth's Next Chapter~</p>
+<div class="hero-cta">
+<a class="btn btn-primary" href="#projects">
+<span>Explore Projects</span>
+<i class="fas fa-rocket"></i>
+</a>
+<a class="btn btn-secondary" href="#skills">
+<span>View Skills</span>
+<i class="fas fa-brain"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="scroll-indicator">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</section>
+<section class="skills-section" id="skills">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">
+                My AI <span class="gradient-text-ai">Skills</span>
+</h2>
+<div class="skills-content">
+<div class="skill-category" data-aos="fade-up">
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-brain"></i>
+</div>
+<h3>AI/ML Core</h3>
+<div class="skill-items">
+<div class="skill-item">
+<h4>Deep Learning Architectures</h4>
+<p>CNNs (ResNet, VGG, EfficientNet), RNNs, LSTMs, Transformers, GANs (ESRGAN for super-resolution), Autoencoders, Vision Transformers (ViT)</p>
+</div>
+<div class="skill-item">
+<h4>LLM Fine-Tuning & Optimization</h4>
+<p>LoRA & QLoRA for parameter-efficient fine-tuning of Llama-2-7b, PEFT techniques, HuggingFace Transformers, quantization strategies</p>
+</div>
+<div class="skill-item">
+<h4>Multi-Agent AI Systems</h4>
+<p>CrewAI framework for autonomous agent coordination, neuromorphic multi-agent architectures for computational psychiatry applications</p>
+</div>
+<div class="skill-item">
+<h4>Classical ML & Ensemble Methods</h4>
+<p>SVM, Random Forest, Gradient Boosting, KNN, Logistic/Linear Regression, ensemble techniques for medical diagnosis</p>
+</div>
+</div>
+</div>
+</div>
+<div class="skill-category hidden-skill" data-aos="fade-up">
+<div class="skill-card">
+<div class="skill-icon">
+<i class="fas fa-eye"></i>
+</div>
+<h3>Computer Vision & Edge AI</h3>
+<div class="skill-items">
+<div class="skill-item">
+<h4>Object Detection & Tracking</h4>
+<p>YOLOv7 & YOLOv8 deployment on NVIDIA Jetson AGX Xavier, real-time aerial object detection (95% field accuracy), vehicle tracking systems with speed estimation</p>
+</div>
+<div class="skill-item">
+<h4>Image Segmentation</h4>
+<p>U-Net architectures for medical imaging (neuron segmentation, brain tumor classification), geological applications (sandstone segmentation), instance segmentation</p>
+</div>
+<div class="skill-item">
+<h4>Image Enhancement & Generation</h4>
+<p>ESRGAN for super-resolution, depth estimation with MiDaS, image-to-3D point cloud conversion, image quality enhancement</p>
+</div>
+<div class="skill-item">
+<h4>Edge AI Optimization</h4>
+<p>TensorRT optimization for Jetson platforms, CUDA acceleration, ONNX model conversion, real-time inference on resource-constrained devices</p>
+</div>
+<div class="skill-item">
+<h4>Gesture & Action Recognition</h4>
+<p>Hand gesture classification (FasterViT), lip reading to text conversion, real-time pose estimation, multimodal action recognition</p>
+</div>
+</div>
+</div>
+</div>
+<div class="skill-category hidden-skill" data-aos="fade-up">
+<div class="skill-card">
+<div class="skill-icon"><i class="fas fa-comment-dots"></i></div>
+<h3>NLP & LLMs</h3>
+<div class="skill-items">
+<div class="skill-item">
+<h4>RAG Systems & Vector Databases</h4>
+<p>Implemented RAG pipelines with LLAMA3 and Gemma models, LangChain integration, vector similarity search, document retrieval and question-answering</p>
+</div>
+<div class="skill-item">
+<h4>Sentiment Analysis & Text Classification</h4>
+<p>Deep learning models for sentiment analysis on Yelp and IMDB reviews, neural network architectures for text classification, emotion detection</p>
+</div>
+<div class="skill-item">
+<h4>Word Embeddings & Semantic Analysis</h4>
+<p>Word2Vec implementations for product reviews, GloVe embeddings, semantic similarity computation, contextual word relationships</p>
+</div>
+<div class="skill-item">
+<h4>Audio & Speech Processing</h4>
+<p>Deep audio classification systems, lip reading to text conversion, multimodal NLP combining visual and audio inputs</p>
+</div>
+</div>
+</div>
+</div>
+<div class="skill-category hidden-skill" data-aos="fade-up">
+<div class="skill-card">
+<div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+<h3>Reinforcement Learning & Optimization</h3>
+<div class="skill-items">
+<div class="skill-item">
+<h4>Q-Learning & Deep RL</h4>
+<p>Q-learning for game AI (Ludo optimization), Deep Q-Networks (DQN), policy gradient methods, reward shaping strategies</p>
+</div>
+<div class="skill-item">
+<h4>Financial Trading Agents</h4>
+<p>RL-based stock trading systems adapting to market dynamics, risk-adjusted portfolio optimization, multi-agent trading coordination</p>
+</div>
+<div class="skill-item">
+<h4>Metaheuristic Optimization</h4>
+<p>Particle Swarm Optimization (PSO) for engineering problems, Genetic Algorithms for evolutionary simulation, hyperparameter optimization</p>
+</div>
+</div>
+</div>
+</div>
+<div class="skill-category hidden-skill" data-aos="fade-up">
+<div class="skill-card">
+<div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+<h3>Time Series & Forecasting</h3>
+<div class="skill-items">
+<div class="skill-item">
+<h4>Statistical Forecasting</h4>
+<p>ARIMA and SARIMAX for sales forecasting, seasonal decomposition, trend analysis, statistical time series modeling</p>
+</div>
+<div class="skill-item">
+<h4>Neural Prophet & Deep Learning</h4>
+<p>NeuralProphet for weather prediction, LSTM networks for sequence forecasting, attention-based time series models</p>
+</div>
+<div class="skill-item">
+<h4>Anomaly Detection</h4>
+<p>Isolation Forest for outlier detection, k-Means clustering for pattern recognition, sensor-based anomaly identification</p>
+</div>
+</div>
+</div>
+</div>
+<div class="skill-category hidden-skill" data-aos="fade-up">
+<div class="skill-card">
+<div class="skill-icon"><i class="fas fa-database"></i></div>
+<h3>Data Engineering & MLOps</h3>
+<div class="skill-items">
+<div class="skill-item">
+<h4>Data Preprocessing & ETL</h4>
+<p>Apache Airflow pipeline orchestration, handling missing data, feature encoding (Label, One-Hot), data normalization and standardization</p>
+</div>
+<div class="skill-item">
+<h4>GPU-Accelerated Computing</h4>
+<p>RAPIDS.ai (cuDF, cuML) for accelerated data processing, CUDA programming, multi-GPU training strategies, census data analysis optimization</p>
+</div>
+<div class="skill-item">
+<h4>Model Evaluation & Hyperparameter Tuning</h4>
+<p>Cross-validation strategies, ROC-AUC metrics, Grid Search, Bayesian Optimization for automated hyperparameter tuning</p>
+</div>
+<div class="skill-item">
+<h4>Feature Engineering</h4>
+<p>PCA for dimensionality reduction, statistical feature extraction, mutual information analysis, domain-specific feature creation</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Specialized Applications -->
+<div class="skill-category hidden-skill" data-aos="fade-up">
+<div class="skill-card">
+<div class="skill-icon"><i class="fas fa-dna"></i></div>
+<h3>Specialized Applications</h3>
+<div class="skill-items">
+<div class="skill-item">
+<h4>Bioinformatics & Computational Biology</h4>
+<p>AlphaFold for 3D protein structure prediction, biological sequence analysis, structure-function relationship modeling</p>
+</div>
+<div class="skill-item">
+<h4>Neuromorphic Computing & BCI</h4>
+<p>Brain-Computer Interface systems for computational psychiatry, neuromorphic multi-agent architectures, real-time EEG/biometric signal processing</p>
+</div>
+<div class="skill-item">
+<h4>Medical AI</h4>
+<p>Brain tumor classification using CNNs, breast cancer tumor detection, medical image segmentation, diagnostic support systems</p>
+</div>
+<div class="skill-item">
+<h4>3D Vision & Point Clouds</h4>
+<p>2D image to 3D point cloud conversion, PointNet classification, depth estimation, 3D reconstruction</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Frameworks & Libraries -->
+<div class="skill-category hidden-skill" data-aos="fade-up">
+  <div class="skill-card">
+    <div class="skill-icon"><i class="fas fa-toolbox"></i></div>
+    <h3>Frameworks &amp; Libraries</h3>
+    <div class="skill-items">
+      <div class="skill-item">
+        <h4>ML/DL Frameworks</h4>
+        <p>TensorFlow, PyTorch, Keras, Fastai, Scikit-learn</p>
+      </div>
+      <div class="skill-item">
+        <h4>Data &amp; Viz</h4>
+        <p>Pandas, NumPy, Matplotlib, Seaborn, Plotly</p>
+      </div>
+      <div class="skill-item">
+        <h4>Vision/NLP</h4>
+        <p>OpenCV, HuggingFace Transformers, Gensim, NLTK, spaCy</p>
+      </div>
+      <div class="skill-item">
+        <h4>GPU-Accelerated Libraries</h4>
+        <p>RAPIDS (cuDF, cuML, cuGraph), CUDA programming</p>
+      </div>
+      <div class="skill-item">
+        <h4>Simulation &amp; Animation</h4>
+        <p>Omniverse Isaac Sim, Matplotlib Animations, OpenAI Gym</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tools, IDEs & Platforms -->
+<div class="skill-category hidden-skill" data-aos="fade-up">
+  <div class="skill-card">
+    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+    <h3>Tools, IDEs &amp; Platforms</h3>
+    <div class="skill-items">
+      <div class="skill-item">
+        <h4>IDEs</h4>
+        <p>Jupyter Lab, VS Code, PyCharm, Google Colab</p>
+      </div>
+      <div class="skill-item">
+        <h4>Version Control</h4>
+        <p>Git, GitHub, GitHub Actions</p>
+      </div>
+      <div class="skill-item">
+        <h4>Virtualization &amp; Deployment</h4>
+        <p>Docker, TensorFlow Lite</p>
+      </div>
+      <div class="skill-item">
+        <h4>Cloud Platforms</h4>
+        <p>AWS (SageMaker, EC2, S3), Google Cloud, Hugging Face Hub, Flask, FastAPI, Astronomer</p>
+      </div>
+      <div class="skill-item">
+        <h4>Experiment Tracking</h4>
+        <p>TensorBoard, Weights &amp; Biases, Grafana, PostgreSQL</p>
+      </div>
+      <div class="skill-item">
+        <h4>Linux, Shell Scripting &amp; Coding</h4>
+        <p>Ubuntu, bash/zsh scripting, Cursor AI (for coding assistance)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Soft Skills -->
+<div class="skill-category hidden-skill" data-aos="fade-up">
+  <div class="skill-card">
+    <div class="skill-icon"><i class="fas fa-people-arrows"></i></div>
+    <h3>Soft Skills</h3>
+    <div class="skill-items">
+      <div class="skill-item">
+        <h4>Problem Solving &amp; Critical Thinking</h4>
+        <p>Proven by diverse AI applications across vision, NLP, and forecasting</p>
+      </div>
+      <div class="skill-item">
+        <h4>Team Collaboration</h4>
+        <p>Experience in collaborative research projects and internships</p>
+      </div>
+      <div class="skill-item">
+        <h4>Communication</h4>
+        <p>Technical blogging, documentation, and public GitHub repos</p>
+      </div>
+      <div class="skill-item">
+        <h4>Research Mindset</h4>
+        <p>Scholarly projects (e.g., Exoplanet detection, 3D protein structure)</p>
+      </div>
+      <div class="skill-item">
+        <h4>Ethical AI Awareness</h4>
+        <p>Bias mitigation, fairness, and data privacy best practices</p>
+      </div>
+      <div class="skill-item">
+        <h4>Adaptability &amp; Learning Agility</h4>
+        <p>Rapid prototyping, continuous learning of emerging AI tech</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="skills-toggle-container">
+<button class="btn btn-primary" id="see-more-skills">
+<span>See More</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<button class="btn btn-secondary hidden" id="minimize-skills">
+<span>Show Less</span>
+<i class="fas fa-chevron-up"></i>
+</button>
+</div>
+</div>
+</section>
+<!-- ============ Tech Stack Section ============ -->
+<section class="tech-stack-section" id="tech-stack">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">
+Technical <span class="gradient-text-ai">Expertise</span>
+</h2>
+<p class="tech-stack-subtitle" data-aos="fade-up">Comprehensive proficiency across the full spectrum of modern AI/ML technologies</p>
+<div class="tech-categories">
+<!-- Core Technologies -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">Core Technologies</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🐍</span>
+<span class="tech-name">Python</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="95"></div>
+</div>
+<span class="tech-percentage">95%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">⚡</span>
+<span class="tech-name">TensorFlow</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="85"></div>
+</div>
+<span class="tech-percentage">85%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔥</span>
+<span class="tech-name">PyTorch</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🤗</span>
+<span class="tech-name">HuggingFace</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="88"></div>
+</div>
+<span class="tech-percentage">88%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📊</span>
+<span class="tech-name">Scikit-Learn</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔢</span>
+<span class="tech-name">NumPy</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="92"></div>
+</div>
+<span class="tech-percentage">92%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🐼</span>
+<span class="tech-name">Pandas</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+</div>
+</div>
+<!-- Computer Vision -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">Computer Vision</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">👁️</span>
+<span class="tech-name">OpenCV</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🎯</span>
+<span class="tech-name">YOLO (v7/v8)</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="95"></div>
+</div>
+<span class="tech-percentage">95%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔍</span>
+<span class="tech-name">Detectron2</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="75"></div>
+</div>
+<span class="tech-percentage">75%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📸</span>
+<span class="tech-name">MediaPipe</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="80"></div>
+</div>
+<span class="tech-percentage">80%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🖼️</span>
+<span class="tech-name">Image Segmentation</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="88"></div>
+</div>
+<span class="tech-percentage">88%</span>
+</div>
+</div>
+</div>
+<!-- NLP & LLMs -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">NLP & LLMs</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🤖</span>
+<span class="tech-name">GPT Models</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="85"></div>
+</div>
+<span class="tech-percentage">85%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🦙</span>
+<span class="tech-name">Llama Fine-tuning</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔗</span>
+<span class="tech-name">RAG Systems</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="92"></div>
+</div>
+<span class="tech-percentage">92%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">⚙️</span>
+<span class="tech-name">LoRA/QLoRA</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="88"></div>
+</div>
+<span class="tech-percentage">88%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📚</span>
+<span class="tech-name">Word2Vec/Embeddings</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="85"></div>
+</div>
+<span class="tech-percentage">85%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">💬</span>
+<span class="tech-name">Sentiment Analysis</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+</div>
+</div>
+<!-- MLOps & Big Data -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">MLOps & Big Data</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📦</span>
+<span class="tech-name">MLflow</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="75"></div>
+</div>
+<span class="tech-percentage">75%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔄</span>
+<span class="tech-name">Airflow</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="70"></div>
+</div>
+<span class="tech-percentage">70%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">⚡</span>
+<span class="tech-name">Apache Spark</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="65"></div>
+</div>
+<span class="tech-percentage">65%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">💚</span>
+<span class="tech-name">RAPIDS.ai</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="80"></div>
+</div>
+<span class="tech-percentage">80%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📊</span>
+<span class="tech-name">Weights & Biases</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="70"></div>
+</div>
+<span class="tech-percentage">70%</span>
+</div>
+</div>
+</div>
+<!-- Cloud & Edge AI -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">Cloud & Edge AI</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">☁️</span>
+<span class="tech-name">AWS SageMaker</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="75"></div>
+</div>
+<span class="tech-percentage">75%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🌩️</span>
+<span class="tech-name">Google Cloud</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="70"></div>
+</div>
+<span class="tech-percentage">70%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">💚</span>
+<span class="tech-name">NVIDIA Jetson</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="95"></div>
+</div>
+<span class="tech-percentage">95%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">⚙️</span>
+<span class="tech-name">CUDA/TensorRT</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="85"></div>
+</div>
+<span class="tech-percentage">85%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🎯</span>
+<span class="tech-name">ONNX</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="80"></div>
+</div>
+<span class="tech-percentage">80%</span>
+</div>
+</div>
+</div>
+<!-- Reinforcement Learning & Robotics -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">RL & Robotics</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🎮</span>
+<span class="tech-name">Q-Learning/DQN</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🤖</span>
+<span class="tech-name">ROS 2</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="75"></div>
+</div>
+<span class="tech-percentage">75%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🦾</span>
+<span class="tech-name">Gazebo Simulation</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="70"></div>
+</div>
+<span class="tech-percentage">70%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔬</span>
+<span class="tech-name">OpenAI Gym</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="85"></div>
+</div>
+<span class="tech-percentage">85%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🧠</span>
+<span class="tech-name">Multi-Agent Systems</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="88"></div>
+</div>
+<span class="tech-percentage">88%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="projects-section" id="projects">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">
+                Featured AI <span class="gradient-text-ai">Projects</span>
+</h2>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-image">
+<i class="fa-solid fa-robot"></i>
+</div>
+<div class="project-content">
+<h3>News Researcher AI Agents</h3>
+<p>CrewAI framework generating 40+ articles daily with 85% accuracy.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/18qcdREtcPKoU63REXR_Rr5VWehmk-hO-/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+<a class="btn btn-primary" href="https://drive.google.com/file/d/1LoNq_7YDIDbSJ2BDyVCWGmynYpG1KhDB/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card">
+<div class="project-image"><i class="fa-solid fa-copyright"></i></div>
+<div class="project-content">
+<h3>NeuroPsych Trading Assistant: A Neuromorphic Multi-Agent System with Brain-Computer Interface for Computational Psychiatry in Financial Markets</h3>
+<p>The NeuroPsych Trading Assistant represents a groundbreaking convergence of neuromorphic computing, computational psychiatry, robotics, and electronic systems design to address the critical mental health crisis among retail traders. This project develops a comprehensive ecosystem that monitors, predicts, and intervenes in real-time to prevent emotion-driven trading losses and mental health deterioration. My system employs cutting-edge neuromor…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="#" target="_blank"><i class="fas fa-file-alt"></i> Docs  (Coming Soon)</a> <a class="btn btn-primary" href="#" target="_blank"><i class="fas fa-play"></i> Demo  (Coming Soon)</a>
+</div>
+</div>
+</div>
+<div class="project-card">
+<div class="project-image"><i class="fa-solid fa-helicopter"></i></div>
+<div class="project-content">
+<h3>Internship Semester (UG Final Semester) Project</h3>
+<p>Aerial vehicles struggle with real-time, low-latency object detection due to small object sizes, computational constraints, and dynamic environments. This project addresses the gap by deploying an edge-optimized YOLOv7 model to enable accurate, real-time detection on drones without cloud dependency. Developed a real-time aerial object detection system using YOLOv7, trained on a custom dataset with NVIDIA Jetson AGX Xavier. Deployed on the "Tun…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/drive/folders/1M_hsP4ME88xmN1Oz7PHSEsQ62SkkizNB?usp=sharing" rel="noopener" target="_blank"><i class="fas fa-file-alt"></i><i class="fas fa-play"></i> Docs & Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-heart"></i></div>
+<div class="project-content">
+<h3>Holistic Wellness AI Platform</h3>
+<p>The Holistic Wellness AI Platform is a comprehensive GenAI application that treats mind, body, and spirit as interconnected aspects of wellness. Built with modern AI protocols (MCP & A2A), it provides personalized recommendations across multiple wellness domains through collaborative AI agents.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://github.com/Srujan29112001/Holistic-Wellness-app" target="_blank"><i class="fa-brands fa-github"></i> Repo</a> <a class="btn btn-primary" href="#" target="_blank"><i class="fas fa-play"></i> Demo(coming soon)</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-briefcase"></i></div>
+<div class="project-content">
+<h3>AI-Powered Advisory Platform for Entrepreneurs</h3>
+<p>A comprehensive, enterprise-grade multi-agent AI platform that provides entrepreneurs with expert advice on finance, tax, strategy, legal, and personal wealth management.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://github.com/Srujan29112001/Entra" target="_blank"><i class="fa-brands fa-github"></i> Repo</a> <a class="btn btn-primary" href="#" target="_blank"><i class="fas fa-play"></i> Demo(coming soon)</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-gauge"></i></div>
+<div class="project-content">
+<h3>Speed Estimation and Vehicle Tracking System</h3>
+<p>Traditional traffic monitoring systems lack accuracy in real-time speed estimation and struggle with occlusions in dense traffic. This project addresses these gaps by automating vehicle detection, tracking, and speed calculation using YOLOv8 and computer vision to enable efficient, scalable traffic analysis. This project leverages YOLOv8's state-of-the-art object detection to identify and track vehicles in real-time video streams. A custom tra…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1UqPIOl2oD8quSNWniIEDeH8kXOGdK_BF/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/17JO_k02YTMQoumhm95J3EA6V3N7fUMIE/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-dna"></i></div>
+<div class="project-content">
+<h3>3D Protein Structure Prediction Using AlphaFold</h3>
+<p>Experimental determination of protein 3D structures is time-intensive and costly, creating a vast gap between known sequences and resolved structures. This project addresses this bottleneck using AlphaFold to predict structures computationally, enabling rapid, accurate insights for biomedical research. This project leverages AlphaFold’s deep learning framework to predict high-accuracy 3D protein structures from amino acid sequences. The workfl…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1-tHGikDQ0KsKPzh1gkqWQimGbgzbCwzo/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1UXka9_8ueddFWr2_LIjX3dsi6l4Sc0aJ/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-dna"></i></div>
+<div class="project-content">
+<h3>Simulation Of Evolution</h3>
+<p>Traditional methods for color-matching optimization struggle with high-dimensional solution spaces. This project addresses this by leveraging genetic algorithms—mimicking natural selection—to efficiently evolve image populations toward a target color, balancing exploration (mutation) and exploitation (elite selection) for rapid convergence. This project simulates evolutionary principles using a genetic algorithm to optimize a population of ran…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1yle4uFPpablrbNbh2vu_CeEELpXErxdH/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1vqF9JT7hqPYHwKPKEGwvOQF9Nl8c42nI/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-file-word"></i></div>
+<div class="project-content">
+<h3>Word similarity check and predictor</h3>
+<p>This project involves the application of Word2Vec, a popular word embedding technique, to a dataset of product reviews. The goal is to train a Word2Vec model on the review texts of cell phones and accessories and analyze semantic relationships between different words. The dataset is processed and cleaned using Gensim's utilities, and the Word2Vec model is trained and evaluated to understand word similarities and relationships.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1fnfMxCc-lXLICGKQ2ogI6jxUqxcocs4R/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1g2h1Doo8riJtBG4uEnmw9sHlN7gMsN5s/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-chart-line"></i></div>
+<div class="project-content">
+<h3>Stock Trading Reinforcement Learning</h3>
+<p>Traditional algorithmic trading strategies struggle to adapt to dynamic market regimes, leading to suboptimal decisions during volatility shifts or black swan events. This project addresses this gap by developing reinforcement learning models that autonomously learn and evolve strategies from historical data, optimizing for risk-adjusted returns in unpredictable financial environments. This project develops and evaluates adaptive trading strat…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1j_j4wVkOCFekHzcBHUX7szmujDygMjxs/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1WYAxpO8CgN8S7f8tXoYzijDIbpI1ai9A/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-dice"></i></div>
+<div class="project-content">
+<h3>Optimized Ludo with Q-Learning</h3>
+<p>Traditional rule-based Ludo AI lacks adaptability to dynamic game states and opponent strategies. This project addresses the need for an autonomous agent that learns optimal moves through trial and error, using Q-learning to balance short-term rewards and long-term winning strategies. This project implements a Q-learning-based AI agent to master the strategic board game Ludo. By defining a state-action space and iteratively updating a Q-table …</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1jW5VVQMPeUcjiy11K6qEXb1s6uAtoN0p/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1pWOdf7ibGoySDqv3t-BuRXMVapnhgDbf/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-diagram-successor"></i></div>
+<div class="project-content">
+<h3>Fine-Tuning Llama-2-7b With LORA And QLoRA</h3>
+<p>Traditional fine-tuning of large models like Llama-2-7b demands prohibitive computational resources. This project addresses the challenge of efficiently adapting such models using QLoRA, enabling cost-effective customization without sacrificing performance. This project demonstrates fine-tuning the Llama-2-7b model using QLoRA, a 4-bit quantization method, to optimize memory usage while preserving performance. Leveraging the guanaco-llama2-1k …</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1ESxkUXoOtJHz7hCWsQNtHl7CCX6dP4p6/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1Q-SIlNpqD-UqUPjqSZOEr-mR3TSVJutm/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-brands fa-searchengin"></i></div>
+<div class="project-content">
+<h3>RAG-Powered QA System with LLAMA3</h3>
+<p>Traditional chatbots struggle with domain-specific queries due to static knowledge bases. This project solves dynamic information retrieval by creating a RAG system that combines real-time document processing with LLAMA3's reasoning, enabling accurate answers from user-provided technical content. Built a Retrieval-Augmented Generation (RAG) system using LLAMA3-70B and NVIDIA embeddings to enable context-aware question answering over custom doc…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1SbpRzNaI3rhNNpZgbnM-3AuH3YeDl0DD/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1OMwJPxw0sAJad32p-R23BRQ5ON2dFpIw/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-brands fa-searchengin"></i></div>
+<div class="project-content">
+<h3>RAG On Gemma</h3>
+<p>This project focuses on building a RAG system using GEMMA GROQ and various Langchain components. The system ingests documents from a specified directory, processes them into vector embeddings, and stores them using FAISS. Users can input questions through a Streamlit interface, and the system retrieves relevant document chunks to generate accurate responses using the GEMMA GROQ model.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/17gXGpI1MiXpxVuuaQ7AU95V4mSus2zgM/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1nRpZqcww_5J2E0vwRG7MjD9hKdLWvU2C/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-circle-exclamation"></i></div>
+<div class="project-content">
+<h3>Sentiment Analysis Of Yelp Reviews</h3>
+<p>Manual analysis of vast customer reviews is time-intensive and prone to subjective bias. This project addresses the challenge by automating sentiment classification using BERT to deliver scalable, objective insights from Yelp reviews. This project automates sentiment classification of customer reviews from Yelp using web scraping and a pre-trained BERT model. By extracting reviews from a Yelp page, preprocessing text data, and leveraging NLP t…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1f5u8kNpKuST7mS8bmceZV85zKKp1-lK6/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/18cbSHKHJbbqiCqbQQEIARR13Lnhzw_we/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-circle-exclamation"></i></div>
+<div class="project-content">
+<h3>Sentiment Analysis On IMDB Reviews With Neural Networks</h3>
+<p>This project focuses on building and evaluating different neural network models for sentiment analysis using IMDb movie reviews. The project involves preprocessing text data, creating word embeddings using GloVe, and training three types of neural networks: SNN, CNN, and LSTM. The performance of each model is evaluated, and the best-performing model is used to predict sentiments on unseen movie reviews. The final model and predictions are save…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1iiMt5LO6vCEqcYfATWiucDp11KCYKwG7/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1Bvf8isfa5dm9CDU2I8iW8Rn3uF1BWV89/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-brain"></i></div>
+<div class="project-content">
+<h3>Brain Tumor Classification</h3>
+<p>Manual diagnosis of brain tumors from MRI scans is time-consuming and prone to human error. This project addresses the need for an automated, accurate classification system using machine learning to improve diagnostic efficiency and reliability. This project demonstrates the development of a machine learning system to classify brain tumors in MRI images into "no tumor" and "pituitary tumor" categories. It involves preprocessing MRI scans (resi…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1K9G82896KDNmSb-b9LTMVGbUqitO9RGn/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1YoqHn6t47-JhjPT62kx42AUDcwteT9yP/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-lungs-virus"></i></div>
+<div class="project-content">
+<h3>Breast Cancer Tumor Classification</h3>
+<p>This project aims to classify breast cancer tumors into malignant or benign categories using machine learning techniques. The dataset is preprocessed by handling missing values and encoding categorical features. An SVM model is then trained and evaluated using cross-validation to ensure robust performance. A pipeline is implemented to integrate data scaling and model training, ensuring that the preprocessing steps are consistently applied duri…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1eke8C7hTGTRWQrOC76ennX91vkL9iu99/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1tJrtIUPlj0zfnD1Iot3QdzbwVJ5epTrJ/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+<div class="project-content">
+<h3>ESRGAN (Super Resolution)</h3>
+<p>This project involves running the ESRGAN model to enhance the resolution of images. ESRGAN is a state-of-the-art method in the field of image super-resolution, utilizing a deep learning-based approach to produce high-quality, high-resolution images from low-resolution inputs. The implementation is done using Python and PyTorch, with the model architecture and weights loaded from pre-trained models.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1hiYgZbDpwv2gk2T1bDi_MnIrpC-FWH5s/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/14BeY2Drf4DBNdAvrwNtJfKJopGRlKVtj/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-atom"></i></div>
+<div class="project-content">
+<h3>Neuron Segmentation</h3>
+<p>Manual neuron segmentation in microscopy images is time-consuming, subjective, and error-prone. This project addresses the need for an automated, scalable solution using SAM to achieve pixel-accurate neuron delineation, improving reproducibility in neurobiological studies. This project leverages Meta's Segment Anything Model (SAM) to automate neuron segmentation in microscopy images, accelerating neurobiological analysis. Using PyTorch and GPU…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1ze5J3K5tjZngrjqMeNPiGWKarzt9dXun/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1eyABVrUlExt-apfXNCc_txCqmLYHGzvd/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-hill-rockslide"></i></div>
+<div class="project-content">
+<h3>Sandstones Segmentation</h3>
+<p>This project involves building a U-Net model to segment sandstone images into different classes, such as clay, quartz, and pyrite. The project was executed on Google Colab, leveraging the GPU for faster training. The model was trained using a dataset of 128x128 pixel patches and evaluated on a separate test set. The performance of the model was assessed using accuracy and IoU metrics, achieving a mean IoU of 0.8665 and an accuracy of 96.37%.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/10ZqytMMbCoOed2OlgPeQ9bG03xJDwe4y/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1SPavtnxRNC6XFguXxQ4lUoRz2rogrGSD/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-volume-low"></i></div>
+<div class="project-content">
+<h3>Deep Audio Classifier</h3>
+<p>Urban sound recognition is challenging due to overlapping acoustic patterns and environmental noise. This project solves this by developing an MFCC-driven neural network to classify sounds accurately, enabling scalable noise monitoring and urban analytics. This project tackles urban sound classification using the UrbanSound8K dataset by extracting Mel-Frequency Cepstral Coefficients (MFCC) to train a neural network. The model achieved 85% test…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1i_SvYd_FbdifHGsw9tb_lLQBHELGXd0K/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1oIB0Jqn38J84iPwhUxTVTIZBqH0AcxYL/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-camera"></i></div>
+<div class="project-content">
+<h3>Lip Read To Text</h3>
+<p>Existing visual speech recognition systems struggle to accurately transcribe spoken words from lip movements due to variable lighting, speaker differences, and lack of temporal alignment. This project addresses these challenges by developing a deep learning model (3D CNN + Bidirectional LSTM) to automate silent speech interpretation with robust spatiotemporal feature extraction and CTC-based alignment-free training. This project develops a Lip…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1hlZQTdIb1GzAGZbhJ9XJHZWV2KXZJgs8/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1ps7LjiKgnh4-PDLa24N6IDAv0J81clgl/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-cube"></i></div>
+<div class="project-content">
+<h3>2D Image To 3D Point Cloud</h3>
+<p>This project involves using a depth estimation model from the Hugging Face Transformers library to predict depth from a 2D image. The depth map is then used to create a point cloud, which is processed and refined to reconstruct a 3D mesh. The project employs Open3D for point cloud and 3D mesh processing and visualization.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1RBcmLM5-aizNkmyKtjJXM6qsc24FI_8f/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1qeGzIMvqmcuScaa15FPmolMsjsgynWNw/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-brands fa-unity"></i></div>
+<div class="project-content">
+<h3>Point Net Classification</h3>
+<p>This project involves creating a 3D shape classification system using TensorFlow and the PointNet architecture. The ModelNet10 dataset is used, consisting of 3D object files in the .off format. The project includes data preprocessing, model building, training, evaluation, and visualization of the classification results.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1E_nkeD5kHpWI5VSPh295BF7qWroe7xem/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1KqVAM8r2UCOewm-tRPP79fMXtdxDOEwN/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-arrows-to-eye"></i></div>
+<div class="project-content">
+<h3>Real-Time Depth Estimation with MiDaS</h3>
+<p>Traditional depth sensing relies on specialized hardware (e.g., LiDAR, stereo cameras), which is costly and computationally intensive. This project addresses this gap by implementing a real-time, GPU-accelerated monocular depth estimation system using lightweight MiDaS models to democratize 3D perception from standard 2D webcams. This project implements a real-time monocular depth estimation system using PyTorch and MiDaS models (DPT_Large, DP…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1for27_u2Bv3fheU_Av9ljfehQFm_cS03/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/17FdFmYfIyzBCxLE3S3qUmYa851rBLtkf/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+<div class="project-content">
+<h3>Weather Prediction With NeuralProphet</h3>
+<p>Rising climate variability in Williamtown demands accurate temperature forecasts to mitigate risks for agriculture and infrastructure. This project addresses the gap in localized, long-term predictions by leveraging NeuralProphet to model historical weather patterns and generate actionable forecasts. This project forecasts temperature trends in Williamtown, Australia, using NeuralProphet, a hybrid time-series model combining neural networks an…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1oPgMMp-RmQ0JqHJIn8b3l34P55cKQP5m/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1PYoDuCL8rZ_8KghvN7aFlZS8114Be_Fh/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-dollar-sign"></i></div>
+<div class="project-content">
+<h3>Sales Forecasting with ARIMA and SARIMAX</h3>
+<p>This project involves analyzing a monthly sales dataset to forecast future sales using time series analysis techniques. The data is preprocessed to handle missing values and ensure stationarity. ARIMA and SARIMAX models are then fitted to the data, and forecasts are generated for future time periods. The results are visualized to assess the model's performance.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1v7jX3pgUazcWWkhZTxtD72IZVf2PLK-I/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1bpkR3dSO7ezBeisGPcvImCajTWMtdvMo/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-list"></i></div>
+<div class="project-content">
+<h3>Optimizing Census Data Analysis with GPU-Accelerated ML</h3>
+<p>Traditional CPU-based processing of large datasets like the U.S. Census suffers from computational bottlenecks, while model selection for imbalanced categorical data remains inefficient. This project solves these by implementing GPU-accelerated preprocessing with RAPIDS and systematically comparing ML models to identify the optimal approach for income prediction. This project harnessed RAPIDS' GPU acceleration to preprocess and analyze the U.S…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1GSohsE8NSQF_uYoN0VqR4O7LrpseFH4_/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1zOE7hMQKqYgffmQwg7LnFdi2lxOn2pCE/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-drum-steelpan"></i></div>
+<div class="project-content">
+<h3>Optimizing Steel Strength Prediction Using PSO</h3>
+<p>The project involves predicting the yield strength of steel using a Random Forest Regressor and optimizing the prediction using Particle Swarm Optimization (PSO). The process includes data preparation, model training, evaluation, and optimization of the prediction process. The PSO technique is implemented both manually and using the PySwarms library to find the optimal set of features that maximize the yield strength.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1BBethH-CFCfgbV5JosAT0OIFUI8aZoe3/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1Eq9p5surHhfGO9ZOM6Rt4Qu8kX_lP9KN/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-hands"></i></div>
+<div class="project-content">
+<h3>Rock-Paper-Scissors Hand Gesture Classifier with FasterViT</h3>
+<p>Traditional CNN-based gesture classifiers struggle with balancing speed and accuracy for real-time applications. This project addresses this gap by implementing FasterViT, a vision transformer optimized for computational efficiency, to achieve sub-20ms inference times with &gt;98% accuracy in dynamic hand gesture recognition. This project leverages the FasterViT architecture to build a real-time hand gesture classifier for rock-paper-scissors gam…</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1oK2qijwqPXxs7Ouj1AgiSHY8u-6SkZ2K/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1bthm5ogWYgUVfjlpMgUkK1DlgV1dz90E/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-seedling"></i></div>
+<div class="project-content">
+<h3>Daisy Or Dandilion Image Classifier</h3>
+<p>This project involves building an image classifier to differentiate between daisies and dandelions. The classifier leverages the Swin Transformer, a powerful model for computer vision tasks, known for its efficient handling of image patches and hierarchical feature representation. The dataset consists of images of daisies and dandelions, and the project is implemented using Jupyter Lab on a local machine with an RTX 3060 GPU.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1nBUxmpCyBpMzLU0tK3xnk0EcXZNKEuYt/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1LZLDfW4caMM5iZhtnzs0be2uwlFv768i/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div>
+<div class="project-card secondary-project">
+<div class="project-image"><i class="fa-solid fa-face-laugh-beam"></i></div>
+<div class="project-content">
+<h3>Happy Or Sad Image Classifier</h3>
+<p>This project involves preprocessing image data, creating a CNN model, training it on the data, and evaluating its performance. The model is designed to classify images into two categories. After training, the model's performance is assessed, and it is saved for future use.</p>
+<div class="project-links">
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1pttNmzVRI8iq0rxXllxRMTjPgWLf9hW-/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1_8_8PJrHWsArQF4q1NYTwgYCmY56tv1Q/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+</div>
+</div>
+</div></div>
+<div class="projects-toggle-container">
+<button class="btn btn-primary" id="see-more-projects">
+<span>Load More</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<button class="btn hidden btn-secondary" id="minimize-projects">
+<span>Show Less</span>
+<i class="fas fa-chevron-up"></i>
+</button>
+</div>
+</div>
+</section>
+<section class="certifications-section" id="certifications">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">
+                My <span class="gradient-text-ai">Certifications</span>
+</h2>
+<div class="certifications-grid">
+<div class="certification-card">
+<div class="cert-image">
+<img alt="Python" src="Images/python.jpg"/>
+</div>
+<div class="cert-content">
+<h3>Python Programming</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/1oV5Wvv7CxR7fs9VV0nSCZqLSoxXO7Snt/view?usp=sharing" target="_blank">
+                            View Certificate <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+</div>
+<div class="certification-card">
+<div class="cert-image">
+<img alt="AI" src="Images/7.png"/>
+</div>
+<div class="cert-content">
+<h3>Artificial Intelligence</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/17dc_cd4Hvm1ACTfkU0VzbM-9IHBhmd2k/view?usp=sharing" target="_blank">
+                            View Certificate <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+</div>
+<div class="certification-card">
+<div class="cert-image">
+<img alt="TensorFlow" src="Images/work=1.png"/>
+</div>
+<div class="cert-content">
+<h3>TensorFlow</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/172ohQe8Fe9jTYLu-u5redCzZM8NY6xtU/view?usp=sharing" target="_blank">
+                            View Certificate <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image">
+<img alt="PyTorch" src="Images/pytorch.png"/>
+</div>
+<div class="cert-content">
+<h3>PyTorch</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/1R1Bu7XZ1AbR1xP1gNgSLFhlutFpPbj5H/view?usp=sharing" target="_blank">
+                            View Certificate <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image">
+<img alt="Computer Vision" src="Images/computer vision.jpg"/>
+</div>
+<div class="cert-content">
+<h3>Modern Computer Vision</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/1_SpAOTD2mU9YNKFiGtkKIF6YdgGs-YZj/view?usp=sharing" target="_blank">
+                            View Certificate <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image"><img alt="PyTorch" src="Images/ML_Ops_Venn_Diagram.svg.png"/></div>
+<div class="cert-content">
+<h3>MLops</h3>
+<a class="cert-link" href="#" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image"><img alt="Modern Computer Vision" src="Images/llm_workflow.jpg"/></div>
+<div class="cert-content">
+<h3>2025 Bootcamp: Generative AI, LLM Apps, AI Agents, Cursor AI</h3>
+<a class="cert-link" href="#" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image"><img alt="Cloud Computing" src="Images/cloud .png"/></div>
+<div class="cert-content">
+<h3>Introduction to Cloud Computing</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/1Q3aX09mKlwJWN60l34-s1L7ZRGxbmUDw/view?usp=sharing" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image"><img alt="Prompt Engineering" src="Images/Prompt Engineer.jpg"/></div>
+<div class="cert-content">
+<h3>Prompt Engineering for AI</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/1lJwe904M6UZYBfptsMwOvGr0WsPBUuzB/view?usp=sharing" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image"><img alt="AI Agents" src="Images/AI Agents.png"/></div>
+<div class="cert-content">
+<h3>Intro to AI Agents</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/1HBQla_Amc2pVPjsz3utDljtaT28IziE0/view?usp=sharing" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image"><img alt="NVIDIA RAPIDS" src="Images/Nvidia Rapids.jpg"/></div>
+<div class="cert-content">
+<h3>AI App Boost with NVIDIA RAPIDS</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/1RcJUL5vQBuAMAsj7JDl8KqxfHTG89BoL/view?usp=sharing" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image"><img alt="Satellite Disaster Monitoring" src="Images/Satellite.png"/></div>
+<div class="cert-content">
+<h3>Disaster Risk Monitoring (NVIDIA)</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/1vWMNqgwWaA6SYa1Je1Y_IwbufqJYTMCM/view?usp=sharing" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div class="certification-card hidden-cert">
+<div class="cert-image"><img alt="Omniverse Extensions" src="Images/Omniverse.jpg"/></div>
+<div class="cert-content">
+<h3>Develop &amp; Publish in Omniverse</h3>
+<a class="cert-link" href="https://drive.google.com/file/d/1ZOKLaLpfdsCqG2ofdKa6VeLeNFL4s4my/view?usp=sharing" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+<div class="skills-toggle-container">
+<button class="btn btn-primary" id="see-more-certs">
+<span>Load More</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<button class="btn btn-secondary hidden" id="minimize-certs">
+<span>Show Less</span>
+<i class="fas fa-chevron-up"></i>
+</button>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">
+                Let's <span class="gradient-text-ai">Connect</span>
+</h2>
+<div class="contact-content">
+<div class="contact-info" data-aos="fade-right">
+<h3>Get In Touch</h3>
+<p>Interested in collaborating on AI projects? Let's connect!</p>
+<div class="contact-details">
+<div class="contact-item">
+<i class="fas fa-map-marker-alt"></i>
+<span>India</span>
+</div>
+</div>
+<div class="social-links">
+<a class="social-link" href="https://github.com/srujan29112001" target="_blank"><i class="fab fa-github"></i></a>
+<a class="social-link" href="https://www.linkedin.com/in/k-srujan2                    " target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a class="social-link" href="https://huggingface.co/Srujan29" target="_blank"><span>🤗</span></a>
+<a class="social-link" href="/cdn-cgi/l/email-protection#fb88898e919a95d5939a899f9290bb9c969a9297d5989496"><i class="fas fa-envelope"></i></a>
+</div>
+</div>
+
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-brand">
+<img alt="Logo" class="footer-logo" src="Images/Bestlogo.png"/>
+<p>Pioneering AI for Earth's Next Chapter</p>
+</div>
+<div class="footer-links">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#tech-stack">Tech Stack</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 Srujan. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="back-to-top">
+<i class="fas fa-chevron-up"></i>
+</button>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
