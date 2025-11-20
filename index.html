@@ -21,7 +21,25 @@
   overflow: hidden;
   overflow-wrap: anywhere;    /* prevent layout breaking on long strings */
 }
-</style></head>
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-257Y2CNGS0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-257Y2CNGS0');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "u91170q7le");
+</script>
+</head>
 <body>
 <canvas class="particle-canvas-fixed" id="particle-canvas"></canvas>
 <div class="loader" id="loader">
@@ -68,7 +86,7 @@
 </div>
 </div>
 </nav>
-<section class="hero" id="home">
+<section class="hero" id="home" data-track-section="home">
 <div class="container hero-content">
 <div class="hero-inner">
 <div class="hero-text">
@@ -100,7 +118,7 @@
 </div>
 </div>
 </section>
-<section class="skills-section" id="skills">
+<section class="skills-section" id="skills" data-track-section="skills">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">
                 My AI <span class="gradient-text-ai">Skills</span>
@@ -388,7 +406,7 @@
 </div>
 </section>
 <!-- ============ Tech Stack Section ============ -->
-<section class="tech-stack-section" id="tech-stack">
+<section class="tech-stack-section" id="tech-stack" data-track-section="tech-stack">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">
 Technical <span class="gradient-text-ai">Expertise</span>
@@ -764,7 +782,7 @@ Technical <span class="gradient-text-ai">Expertise</span>
 </div>
 </div>
 </section>
-<section class="projects-section" id="projects">
+<section class="projects-section" id="projects" data-track-section="projects">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">
                 Featured AI <span class="gradient-text-ai">Projects</span>
@@ -789,317 +807,348 @@ Technical <span class="gradient-text-ai">Expertise</span>
 <h3>NeuroPsych Trading Assistant: A Neuromorphic Multi-Agent System with Brain-Computer Interface for Computational Psychiatry in Financial Markets</h3>
 <p>The NeuroPsych Trading Assistant represents a groundbreaking convergence of neuromorphic computing, computational psychiatry, robotics, and electronic systems design to address the critical mental health crisis among retail traders. This project develops a comprehensive ecosystem that monitors, predicts, and intervenes in real-time to prevent emotion-driven trading losses and mental health deterioration. My system employs cutting-edge neuromor…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="#" target="_blank"><i class="fas fa-file-alt"></i> Docs  (Coming Soon)</a> <a class="btn btn-primary" href="#" target="_blank"><i class="fas fa-play"></i> Demo  (Coming Soon)</a>
+<a class="btn btn-outline" href="#" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -NeuroPsych Trading Assistant"><i class="fas fa-file-alt"></i> Docs  (Coming Soon)</a> <a class="btn btn-primary" href="#" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -NeuroPsych Trading Assistant"><i class="fas fa-play"></i> Demo  (Coming Soon)</a>
 </div>
 </div>
 </div>
+
 <div class="project-card">
 <div class="project-image"><i class="fa-solid fa-helicopter"></i></div>
 <div class="project-content">
 <h3>Internship Semester (UG Final Semester) Project</h3>
 <p>Aerial vehicles struggle with real-time, low-latency object detection due to small object sizes, computational constraints, and dynamic environments. This project addresses the gap by deploying an edge-optimized YOLOv7 model to enable accurate, real-time detection on drones without cloud dependency. Developed a real-time aerial object detection system using YOLOv7, trained on a custom dataset with NVIDIA Jetson AGX Xavier. Deployed on the "Tun…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/drive/folders/1M_hsP4ME88xmN1Oz7PHSEsQ62SkkizNB?usp=sharing" rel="noopener" target="_blank"><i class="fas fa-file-alt"></i><i class="fas fa-play"></i> Docs & Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/drive/folders/1M_hsP4ME88xmN1Oz7PHSEsQ62SkkizNB?usp=sharing" rel="noopener" target="_blank" data-track-click="project_docs_click" data-track-label="Docs and Demo -Internship Semester (UG Final Semester) Project"><i class="fas fa-file-alt"></i><i class="fas fa-play"></i> Docs & Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-heart"></i></div>
 <div class="project-content">
 <h3>Holistic Wellness AI Platform</h3>
 <p>The Holistic Wellness AI Platform is a comprehensive GenAI application that treats mind, body, and spirit as interconnected aspects of wellness. Built with modern AI protocols (MCP & A2A), it provides personalized recommendations across multiple wellness domains through collaborative AI agents.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://github.com/Srujan29112001/Holistic-Wellness-app" target="_blank"><i class="fa-brands fa-github"></i> Repo</a> <a class="btn btn-primary" href="#" target="_blank"><i class="fas fa-play"></i> Demo(coming soon)</a>
+<a class="btn btn-outline" href="https://github.com/Srujan29112001/Holistic-Wellness-app" target="_blank" data-track-click="project_repo_click" data-track-label="Repo -Holistic Wellness AI Platform"><i class="fa-brands fa-github"></i> Repo</a> <a class="btn btn-primary" href="#" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Holistic Wellness AI Platform"><i class="fas fa-play"></i> Demo(coming soon)</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-briefcase"></i></div>
 <div class="project-content">
 <h3>AI-Powered Advisory Platform for Entrepreneurs</h3>
 <p>A comprehensive, enterprise-grade multi-agent AI platform that provides entrepreneurs with expert advice on finance, tax, strategy, legal, and personal wealth management.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://github.com/Srujan29112001/Entra" target="_blank"><i class="fa-brands fa-github"></i> Repo</a> <a class="btn btn-primary" href="#" target="_blank"><i class="fas fa-play"></i> Demo(coming soon)</a>
+<a class="btn btn-outline" href="https://github.com/Srujan29112001/Entra" target="_blank" data-track-click="project_repo_click" data-track-label="Repo -AI-Powered Advisory Platform for Entrepreneurs"><i class="fa-brands fa-github"></i> Repo</a> <a class="btn btn-primary" href="#" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -AI-Powered Advisory Platform for Entrepreneurs"><i class="fas fa-play"></i> Demo(coming soon)</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-gauge"></i></div>
 <div class="project-content">
 <h3>Speed Estimation and Vehicle Tracking System</h3>
 <p>Traditional traffic monitoring systems lack accuracy in real-time speed estimation and struggle with occlusions in dense traffic. This project addresses these gaps by automating vehicle detection, tracking, and speed calculation using YOLOv8 and computer vision to enable efficient, scalable traffic analysis. This project leverages YOLOv8's state-of-the-art object detection to identify and track vehicles in real-time video streams. A custom tra…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1UqPIOl2oD8quSNWniIEDeH8kXOGdK_BF/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/17JO_k02YTMQoumhm95J3EA6V3N7fUMIE/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1UqPIOl2oD8quSNWniIEDeH8kXOGdK_BF/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Speed Estimation and Vehicle Tracking System"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/17JO_k02YTMQoumhm95J3EA6V3N7fUMIE/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Speed Estimation and Vehicle Tracking System"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-dna"></i></div>
 <div class="project-content">
 <h3>3D Protein Structure Prediction Using AlphaFold</h3>
-<p>Experimental determination of protein 3D structures is time-intensive and costly, creating a vast gap between known sequences and resolved structures. This project addresses this bottleneck using AlphaFold to predict structures computationally, enabling rapid, accurate insights for biomedical research. This project leverages AlphaFold’s deep learning framework to predict high-accuracy 3D protein structures from amino acid sequences. The workfl…</p>
+<p>Experimental determination of protein 3D structures is time-intensive and costly, creating a vast gap between known sequences and resolved structures. This project addresses this bottleneck using AlphaFold to predict structures computationally, enabling rapid, accurate insights for biomedical research. This project leverages AlphaFold's deep learning framework to predict high-accuracy 3D protein structures from amino acid sequences. The workfl…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1-tHGikDQ0KsKPzh1gkqWQimGbgzbCwzo/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1UXka9_8ueddFWr2_LIjX3dsi6l4Sc0aJ/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1-tHGikDQ0KsKPzh1gkqWQimGbgzbCwzo/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -3D Protein Structure Prediction Using AlphaFold"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1UXka9_8ueddFWr2_LIjX3dsi6l4Sc0aJ/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -3D Protein Structure Prediction Using AlphaFold"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-dna"></i></div>
 <div class="project-content">
 <h3>Simulation Of Evolution</h3>
 <p>Traditional methods for color-matching optimization struggle with high-dimensional solution spaces. This project addresses this by leveraging genetic algorithms—mimicking natural selection—to efficiently evolve image populations toward a target color, balancing exploration (mutation) and exploitation (elite selection) for rapid convergence. This project simulates evolutionary principles using a genetic algorithm to optimize a population of ran…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1yle4uFPpablrbNbh2vu_CeEELpXErxdH/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1vqF9JT7hqPYHwKPKEGwvOQF9Nl8c42nI/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1yle4uFPpablrbNbh2vu_CeEELpXErxdH/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Simulation Of Evolution"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1vqF9JT7hqPYHwKPKEGwvOQF9Nl8c42nI/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Simulation Of Evolution"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-file-word"></i></div>
 <div class="project-content">
 <h3>Word similarity check and predictor</h3>
 <p>This project involves the application of Word2Vec, a popular word embedding technique, to a dataset of product reviews. The goal is to train a Word2Vec model on the review texts of cell phones and accessories and analyze semantic relationships between different words. The dataset is processed and cleaned using Gensim's utilities, and the Word2Vec model is trained and evaluated to understand word similarities and relationships.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1fnfMxCc-lXLICGKQ2ogI6jxUqxcocs4R/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1g2h1Doo8riJtBG4uEnmw9sHlN7gMsN5s/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1fnfMxCc-lXLICGKQ2ogI6jxUqxcocs4R/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Word similarity check and predictor"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1g2h1Doo8riJtBG4uEnmw9sHlN7gMsN5s/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Word similarity check and predictor"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-chart-line"></i></div>
 <div class="project-content">
 <h3>Stock Trading Reinforcement Learning</h3>
 <p>Traditional algorithmic trading strategies struggle to adapt to dynamic market regimes, leading to suboptimal decisions during volatility shifts or black swan events. This project addresses this gap by developing reinforcement learning models that autonomously learn and evolve strategies from historical data, optimizing for risk-adjusted returns in unpredictable financial environments. This project develops and evaluates adaptive trading strat…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1j_j4wVkOCFekHzcBHUX7szmujDygMjxs/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1WYAxpO8CgN8S7f8tXoYzijDIbpI1ai9A/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1j_j4wVkOCFekHzcBHUX7szmujDygMjxs/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Stock Trading Reinforcement Learning"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1WYAxpO8CgN8S7f8tXoYzijDIbpI1ai9A/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Stock Trading Reinforcement Learning"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-dice"></i></div>
 <div class="project-content">
 <h3>Optimized Ludo with Q-Learning</h3>
 <p>Traditional rule-based Ludo AI lacks adaptability to dynamic game states and opponent strategies. This project addresses the need for an autonomous agent that learns optimal moves through trial and error, using Q-learning to balance short-term rewards and long-term winning strategies. This project implements a Q-learning-based AI agent to master the strategic board game Ludo. By defining a state-action space and iteratively updating a Q-table …</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1jW5VVQMPeUcjiy11K6qEXb1s6uAtoN0p/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1pWOdf7ibGoySDqv3t-BuRXMVapnhgDbf/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1jW5VVQMPeUcjiy11K6qEXb1s6uAtoN0p/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Optimized Ludo with Q-Learning"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1pWOdf7ibGoySDqv3t-BuRXMVapnhgDbf/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Optimized Ludo with Q-Learning"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-diagram-successor"></i></div>
 <div class="project-content">
 <h3>Fine-Tuning Llama-2-7b With LORA And QLoRA</h3>
 <p>Traditional fine-tuning of large models like Llama-2-7b demands prohibitive computational resources. This project addresses the challenge of efficiently adapting such models using QLoRA, enabling cost-effective customization without sacrificing performance. This project demonstrates fine-tuning the Llama-2-7b model using QLoRA, a 4-bit quantization method, to optimize memory usage while preserving performance. Leveraging the guanaco-llama2-1k …</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1ESxkUXoOtJHz7hCWsQNtHl7CCX6dP4p6/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1Q-SIlNpqD-UqUPjqSZOEr-mR3TSVJutm/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1ESxkUXoOtJHz7hCWsQNtHl7CCX6dP4p6/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Fine-Tuning Llama-2-7b With LORA And QLoRA"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1Q-SIlNpqD-UqUPjqSZOEr-mR3TSVJutm/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Fine-Tuning Llama-2-7b With LORA And QLoRA"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-brands fa-searchengin"></i></div>
 <div class="project-content">
 <h3>RAG-Powered QA System with LLAMA3</h3>
 <p>Traditional chatbots struggle with domain-specific queries due to static knowledge bases. This project solves dynamic information retrieval by creating a RAG system that combines real-time document processing with LLAMA3's reasoning, enabling accurate answers from user-provided technical content. Built a Retrieval-Augmented Generation (RAG) system using LLAMA3-70B and NVIDIA embeddings to enable context-aware question answering over custom doc…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1SbpRzNaI3rhNNpZgbnM-3AuH3YeDl0DD/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1OMwJPxw0sAJad32p-R23BRQ5ON2dFpIw/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1SbpRzNaI3rhNNpZgbnM-3AuH3YeDl0DD/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -RAG-Powered QA System with LLAMA3"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1OMwJPxw0sAJad32p-R23BRQ5ON2dFpIw/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -RAG-Powered QA System with LLAMA3"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-brands fa-searchengin"></i></div>
 <div class="project-content">
 <h3>RAG On Gemma</h3>
 <p>This project focuses on building a RAG system using GEMMA GROQ and various Langchain components. The system ingests documents from a specified directory, processes them into vector embeddings, and stores them using FAISS. Users can input questions through a Streamlit interface, and the system retrieves relevant document chunks to generate accurate responses using the GEMMA GROQ model.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/17gXGpI1MiXpxVuuaQ7AU95V4mSus2zgM/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1nRpZqcww_5J2E0vwRG7MjD9hKdLWvU2C/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/17gXGpI1MiXpxVuuaQ7AU95V4mSus2zgM/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -RAG On Gemma"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1nRpZqcww_5J2E0vwRG7MjD9hKdLWvU2C/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -RAG On Gemma"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-circle-exclamation"></i></div>
 <div class="project-content">
 <h3>Sentiment Analysis Of Yelp Reviews</h3>
 <p>Manual analysis of vast customer reviews is time-intensive and prone to subjective bias. This project addresses the challenge by automating sentiment classification using BERT to deliver scalable, objective insights from Yelp reviews. This project automates sentiment classification of customer reviews from Yelp using web scraping and a pre-trained BERT model. By extracting reviews from a Yelp page, preprocessing text data, and leveraging NLP t…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1f5u8kNpKuST7mS8bmceZV85zKKp1-lK6/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/18cbSHKHJbbqiCqbQQEIARR13Lnhzw_we/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1f5u8kNpKuST7mS8bmceZV85zKKp1-lK6/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Sentiment Analysis Of Yelp Reviews"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/18cbSHKHJbbqiCqbQQEIARR13Lnhzw_we/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Sentiment Analysis Of Yelp Reviews"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-circle-exclamation"></i></div>
 <div class="project-content">
 <h3>Sentiment Analysis On IMDB Reviews With Neural Networks</h3>
 <p>This project focuses on building and evaluating different neural network models for sentiment analysis using IMDb movie reviews. The project involves preprocessing text data, creating word embeddings using GloVe, and training three types of neural networks: SNN, CNN, and LSTM. The performance of each model is evaluated, and the best-performing model is used to predict sentiments on unseen movie reviews. The final model and predictions are save…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1iiMt5LO6vCEqcYfATWiucDp11KCYKwG7/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1Bvf8isfa5dm9CDU2I8iW8Rn3uF1BWV89/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1iiMt5LO6vCEqcYfATWiucDp11KCYKwG7/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Sentiment Analysis On IMDB Reviews With Neural Networks"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1Bvf8isfa5dm9CDU2I8iW8Rn3uF1BWV89/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Sentiment Analysis On IMDB Reviews With Neural Networks"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-brain"></i></div>
 <div class="project-content">
 <h3>Brain Tumor Classification</h3>
 <p>Manual diagnosis of brain tumors from MRI scans is time-consuming and prone to human error. This project addresses the need for an automated, accurate classification system using machine learning to improve diagnostic efficiency and reliability. This project demonstrates the development of a machine learning system to classify brain tumors in MRI images into "no tumor" and "pituitary tumor" categories. It involves preprocessing MRI scans (resi…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1K9G82896KDNmSb-b9LTMVGbUqitO9RGn/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1YoqHn6t47-JhjPT62kx42AUDcwteT9yP/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1K9G82896KDNmSb-b9LTMVGbUqitO9RGn/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Brain Tumor Classification"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1YoqHn6t47-JhjPT62kx42AUDcwteT9yP/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Brain Tumor Classification"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-lungs-virus"></i></div>
 <div class="project-content">
 <h3>Breast Cancer Tumor Classification</h3>
 <p>This project aims to classify breast cancer tumors into malignant or benign categories using machine learning techniques. The dataset is preprocessed by handling missing values and encoding categorical features. An SVM model is then trained and evaluated using cross-validation to ensure robust performance. A pipeline is implemented to integrate data scaling and model training, ensuring that the preprocessing steps are consistently applied duri…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1eke8C7hTGTRWQrOC76ennX91vkL9iu99/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1tJrtIUPlj0zfnD1Iot3QdzbwVJ5epTrJ/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1eke8C7hTGTRWQrOC76ennX91vkL9iu99/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Breast Cancer Tumor Classification"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1tJrtIUPlj0zfnD1Iot3QdzbwVJ5epTrJ/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Breast Cancer Tumor Classification"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
 <div class="project-content">
 <h3>ESRGAN (Super Resolution)</h3>
 <p>This project involves running the ESRGAN model to enhance the resolution of images. ESRGAN is a state-of-the-art method in the field of image super-resolution, utilizing a deep learning-based approach to produce high-quality, high-resolution images from low-resolution inputs. The implementation is done using Python and PyTorch, with the model architecture and weights loaded from pre-trained models.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1hiYgZbDpwv2gk2T1bDi_MnIrpC-FWH5s/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/14BeY2Drf4DBNdAvrwNtJfKJopGRlKVtj/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1hiYgZbDpwv2gk2T1bDi_MnIrpC-FWH5s/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -ESRGAN (Super Resolution)"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/14BeY2Drf4DBNdAvrwNtJfKJopGRlKVtj/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -ESRGAN (Super Resolution)"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-atom"></i></div>
 <div class="project-content">
 <h3>Neuron Segmentation</h3>
 <p>Manual neuron segmentation in microscopy images is time-consuming, subjective, and error-prone. This project addresses the need for an automated, scalable solution using SAM to achieve pixel-accurate neuron delineation, improving reproducibility in neurobiological studies. This project leverages Meta's Segment Anything Model (SAM) to automate neuron segmentation in microscopy images, accelerating neurobiological analysis. Using PyTorch and GPU…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1ze5J3K5tjZngrjqMeNPiGWKarzt9dXun/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1eyABVrUlExt-apfXNCc_txCqmLYHGzvd/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1ze5J3K5tjZngrjqMeNPiGWKarzt9dXun/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Neuron Segmentation"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1eyABVrUlExt-apfXNCc_txCqmLYHGzvd/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Neuron Segmentation"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-hill-rockslide"></i></div>
 <div class="project-content">
 <h3>Sandstones Segmentation</h3>
 <p>This project involves building a U-Net model to segment sandstone images into different classes, such as clay, quartz, and pyrite. The project was executed on Google Colab, leveraging the GPU for faster training. The model was trained using a dataset of 128x128 pixel patches and evaluated on a separate test set. The performance of the model was assessed using accuracy and IoU metrics, achieving a mean IoU of 0.8665 and an accuracy of 96.37%.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/10ZqytMMbCoOed2OlgPeQ9bG03xJDwe4y/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1SPavtnxRNC6XFguXxQ4lUoRz2rogrGSD/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/10ZqytMMbCoOed2OlgPeQ9bG03xJDwe4y/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Sandstones Segmentation"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1SPavtnxRNC6XFguXxQ4lUoRz2rogrGSD/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Sandstones Segmentation"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-volume-low"></i></div>
 <div class="project-content">
 <h3>Deep Audio Classifier</h3>
 <p>Urban sound recognition is challenging due to overlapping acoustic patterns and environmental noise. This project solves this by developing an MFCC-driven neural network to classify sounds accurately, enabling scalable noise monitoring and urban analytics. This project tackles urban sound classification using the UrbanSound8K dataset by extracting Mel-Frequency Cepstral Coefficients (MFCC) to train a neural network. The model achieved 85% test…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1i_SvYd_FbdifHGsw9tb_lLQBHELGXd0K/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1oIB0Jqn38J84iPwhUxTVTIZBqH0AcxYL/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1i_SvYd_FbdifHGsw9tb_lLQBHELGXd0K/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Deep Audio Classifier"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1oIB0Jqn38J84iPwhUxTVTIZBqH0AcxYL/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Deep Audio Classifier"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-camera"></i></div>
 <div class="project-content">
 <h3>Lip Read To Text</h3>
 <p>Existing visual speech recognition systems struggle to accurately transcribe spoken words from lip movements due to variable lighting, speaker differences, and lack of temporal alignment. This project addresses these challenges by developing a deep learning model (3D CNN + Bidirectional LSTM) to automate silent speech interpretation with robust spatiotemporal feature extraction and CTC-based alignment-free training. This project develops a Lip…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1hlZQTdIb1GzAGZbhJ9XJHZWV2KXZJgs8/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1ps7LjiKgnh4-PDLa24N6IDAv0J81clgl/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1hlZQTdIb1GzAGZbhJ9XJHZWV2KXZJgs8/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Lip Read To Text"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1ps7LjiKgnh4-PDLa24N6IDAv0J81clgl/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Lip Read To Text"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-cube"></i></div>
 <div class="project-content">
 <h3>2D Image To 3D Point Cloud</h3>
 <p>This project involves using a depth estimation model from the Hugging Face Transformers library to predict depth from a 2D image. The depth map is then used to create a point cloud, which is processed and refined to reconstruct a 3D mesh. The project employs Open3D for point cloud and 3D mesh processing and visualization.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1RBcmLM5-aizNkmyKtjJXM6qsc24FI_8f/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1qeGzIMvqmcuScaa15FPmolMsjsgynWNw/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1RBcmLM5-aizNkmyKtjJXM6qsc24FI_8f/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -2D Image To 3D Point Cloud"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1qeGzIMvqmcuScaa15FPmolMsjsgynWNw/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -2D Image To 3D Point Cloud"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-brands fa-unity"></i></div>
 <div class="project-content">
 <h3>Point Net Classification</h3>
 <p>This project involves creating a 3D shape classification system using TensorFlow and the PointNet architecture. The ModelNet10 dataset is used, consisting of 3D object files in the .off format. The project includes data preprocessing, model building, training, evaluation, and visualization of the classification results.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1E_nkeD5kHpWI5VSPh295BF7qWroe7xem/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1KqVAM8r2UCOewm-tRPP79fMXtdxDOEwN/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1E_nkeD5kHpWI5VSPh295BF7qWroe7xem/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Point Net Classification"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1KqVAM8r2UCOewm-tRPP79fMXtdxDOEwN/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Point Net Classification"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-arrows-to-eye"></i></div>
 <div class="project-content">
 <h3>Real-Time Depth Estimation with MiDaS</h3>
 <p>Traditional depth sensing relies on specialized hardware (e.g., LiDAR, stereo cameras), which is costly and computationally intensive. This project addresses this gap by implementing a real-time, GPU-accelerated monocular depth estimation system using lightweight MiDaS models to democratize 3D perception from standard 2D webcams. This project implements a real-time monocular depth estimation system using PyTorch and MiDaS models (DPT_Large, DP…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1for27_u2Bv3fheU_Av9ljfehQFm_cS03/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/17FdFmYfIyzBCxLE3S3qUmYa851rBLtkf/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1for27_u2Bv3fheU_Av9ljfehQFm_cS03/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Real-Time Depth Estimation with MiDaS"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/17FdFmYfIyzBCxLE3S3qUmYa851rBLtkf/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Real-Time Depth Estimation with MiDaS"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-cloud-sun-rain"></i></div>
 <div class="project-content">
 <h3>Weather Prediction With NeuralProphet</h3>
 <p>Rising climate variability in Williamtown demands accurate temperature forecasts to mitigate risks for agriculture and infrastructure. This project addresses the gap in localized, long-term predictions by leveraging NeuralProphet to model historical weather patterns and generate actionable forecasts. This project forecasts temperature trends in Williamtown, Australia, using NeuralProphet, a hybrid time-series model combining neural networks an…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1oPgMMp-RmQ0JqHJIn8b3l34P55cKQP5m/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1PYoDuCL8rZ_8KghvN7aFlZS8114Be_Fh/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1oPgMMp-RmQ0JqHJIn8b3l34P55cKQP5m/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Weather Prediction With NeuralProphet"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1PYoDuCL8rZ_8KghvN7aFlZS8114Be_Fh/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Weather Prediction With NeuralProphet"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-dollar-sign"></i></div>
 <div class="project-content">
 <h3>Sales Forecasting with ARIMA and SARIMAX</h3>
 <p>This project involves analyzing a monthly sales dataset to forecast future sales using time series analysis techniques. The data is preprocessed to handle missing values and ensure stationarity. ARIMA and SARIMAX models are then fitted to the data, and forecasts are generated for future time periods. The results are visualized to assess the model's performance.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1v7jX3pgUazcWWkhZTxtD72IZVf2PLK-I/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1bpkR3dSO7ezBeisGPcvImCajTWMtdvMo/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1v7jX3pgUazcWWkhZTxtD72IZVf2PLK-I/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Sales Forecasting with ARIMA and SARIMAX"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1bpkR3dSO7ezBeisGPcvImCajTWMtdvMo/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Sales Forecasting with ARIMA and SARIMAX"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-list"></i></div>
 <div class="project-content">
 <h3>Optimizing Census Data Analysis with GPU-Accelerated ML</h3>
 <p>Traditional CPU-based processing of large datasets like the U.S. Census suffers from computational bottlenecks, while model selection for imbalanced categorical data remains inefficient. This project solves these by implementing GPU-accelerated preprocessing with RAPIDS and systematically comparing ML models to identify the optimal approach for income prediction. This project harnessed RAPIDS' GPU acceleration to preprocess and analyze the U.S…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1GSohsE8NSQF_uYoN0VqR4O7LrpseFH4_/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1zOE7hMQKqYgffmQwg7LnFdi2lxOn2pCE/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1GSohsE8NSQF_uYoN0VqR4O7LrpseFH4_/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Optimizing Census Data Analysis with GPU-Accelerated ML"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1zOE7hMQKqYgffmQwg7LnFdi2lxOn2pCE/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Optimizing Census Data Analysis with GPU-Accelerated ML"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-drum-steelpan"></i></div>
 <div class="project-content">
 <h3>Optimizing Steel Strength Prediction Using PSO</h3>
 <p>The project involves predicting the yield strength of steel using a Random Forest Regressor and optimizing the prediction using Particle Swarm Optimization (PSO). The process includes data preparation, model training, evaluation, and optimization of the prediction process. The PSO technique is implemented both manually and using the PySwarms library to find the optimal set of features that maximize the yield strength.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1BBethH-CFCfgbV5JosAT0OIFUI8aZoe3/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1Eq9p5surHhfGO9ZOM6Rt4Qu8kX_lP9KN/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1BBethH-CFCfgbV5JosAT0OIFUI8aZoe3/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Optimizing Steel Strength Prediction Using PSO"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1Eq9p5surHhfGO9ZOM6Rt4Qu8kX_lP9KN/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Optimizing Steel Strength Prediction Using PSO"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-hands"></i></div>
 <div class="project-content">
 <h3>Rock-Paper-Scissors Hand Gesture Classifier with FasterViT</h3>
 <p>Traditional CNN-based gesture classifiers struggle with balancing speed and accuracy for real-time applications. This project addresses this gap by implementing FasterViT, a vision transformer optimized for computational efficiency, to achieve sub-20ms inference times with &gt;98% accuracy in dynamic hand gesture recognition. This project leverages the FasterViT architecture to build a real-time hand gesture classifier for rock-paper-scissors gam…</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1oK2qijwqPXxs7Ouj1AgiSHY8u-6SkZ2K/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1bthm5ogWYgUVfjlpMgUkK1DlgV1dz90E/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1oK2qijwqPXxs7Ouj1AgiSHY8u-6SkZ2K/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Rock-Paper-Scissors Hand Gesture Classifier with FasterViT"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1bthm5ogWYgUVfjlpMgUkK1DlgV1dz90E/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Rock-Paper-Scissors Hand Gesture Classifier with FasterViT"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-seedling"></i></div>
 <div class="project-content">
 <h3>Daisy Or Dandilion Image Classifier</h3>
 <p>This project involves building an image classifier to differentiate between daisies and dandelions. The classifier leverages the Swin Transformer, a powerful model for computer vision tasks, known for its efficient handling of image patches and hierarchical feature representation. The dataset consists of images of daisies and dandelions, and the project is implemented using Jupyter Lab on a local machine with an RTX 3060 GPU.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1nBUxmpCyBpMzLU0tK3xnk0EcXZNKEuYt/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1LZLDfW4caMM5iZhtnzs0be2uwlFv768i/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1nBUxmpCyBpMzLU0tK3xnk0EcXZNKEuYt/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Daisy Or Dandilion Image Classifier"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1LZLDfW4caMM5iZhtnzs0be2uwlFv768i/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Daisy Or Dandilion Image Classifier"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div>
+
 <div class="project-card secondary-project">
 <div class="project-image"><i class="fa-solid fa-face-laugh-beam"></i></div>
 <div class="project-content">
 <h3>Happy Or Sad Image Classifier</h3>
 <p>This project involves preprocessing image data, creating a CNN model, training it on the data, and evaluating its performance. The model is designed to classify images into two categories. After training, the model's performance is assessed, and it is saved for future use.</p>
 <div class="project-links">
-<a class="btn btn-outline" href="https://drive.google.com/file/d/1pttNmzVRI8iq0rxXllxRMTjPgWLf9hW-/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1_8_8PJrHWsArQF4q1NYTwgYCmY56tv1Q/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+<a class="btn btn-outline" href="https://drive.google.com/file/d/1pttNmzVRI8iq0rxXllxRMTjPgWLf9hW-/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs -Happy Or Sad Image Classifier"><i class="fas fa-file-alt"></i> Docs</a> <a class="btn btn-primary" href="https://drive.google.com/file/d/1_8_8PJrHWsArQF4q1NYTwgYCmY56tv1Q/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo -Happy Or Sad Image Classifier"><i class="fas fa-play"></i> Demo</a>
 </div>
 </div>
 </div></div>
@@ -1115,7 +1164,7 @@ Technical <span class="gradient-text-ai">Expertise</span>
 </div>
 </div>
 </section>
-<section class="certifications-section" id="certifications">
+<section class="certifications-section" id="certifications" data-track-section="certifications">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">
                 My <span class="gradient-text-ai">Certifications</span>
@@ -1245,7 +1294,7 @@ Technical <span class="gradient-text-ai">Expertise</span>
 </div>
 </div>
 </section>
-<section class="contact" id="contact">
+<section class="contact" id="contact" data-track-section="contact">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">
                 Let's <span class="gradient-text-ai">Connect</span>
