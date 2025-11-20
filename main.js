@@ -20,7 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const seeMoreCerts = document.getElementById('see-more-certs');
     const minimizeCerts = document.getElementById('minimize-certs');
     const contactForm = document.getElementById('contact-form');
-
+// ============ Analytics Helper (GA4) ============
+    function trackEvent(name, params = {}) {
+        if (typeof gtag === 'function') {
+            gtag('event', name, params);
+        }
+        // If GA isn't loaded (e.g., local file://), this safely does nothing
+    }
     // Motion preference
     let motionEnabled = localStorage.getItem('motionEnabled') !== 'false';
 
@@ -675,7 +681,51 @@ document.addEventListener('DOMContentLoaded', function() {
     try { seeMoreCerts?.addEventListener('click', () => setTimeout(refreshAll, 60)); } catch (e) {}
     try { minimizeCerts?.addEventListener('click', () => setTimeout(refreshAll, 60)); } catch (e) {}
   })();
+// ============ Section View Tracking (GA4) ============
+    const trackedSections = new Set();
+    const sectionElements = document.querySelectorAll('[data-track-section]');
 
+    if (sectionElements.length > 0) {
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const sectionId = el.id || el.dataset.trackSection;
+                    const sectionName = el.dataset.trackSection || sectionId;
+
+                    if (!trackedSections.has(sectionId)) {
+                        trackedSections.add(sectionId);
+
+                        // Fire a GA4 event once per section per page load
+                        trackEvent('section_view', {
+                            section_id: sectionId,
+                            section_name: sectionName
+                        });
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+
+        sectionElements.forEach(el => sectionObserver.observe(el));
+    }
+    // ============ Button / Link Click Tracking (GA4) ============
+    const trackableElements = document.querySelectorAll('[data-track-click]');
+
+    if (trackableElements.length > 0) {
+        trackableElements.forEach(el => {
+            el.addEventListener('click', () => {
+                const eventName = el.dataset.trackClick || 'button_click';
+                const label = el.dataset.trackLabel || el.innerText.trim();
+                const section = el.closest('section')?.id || null;
+
+                trackEvent(eventName, {
+                    button_label: label,
+                    button_id: el.id || null,
+                    section: section
+                });
+            });
+        });
+    }
 
 
     // ============ Tech Expertise Progress Animation (Research-style; scoped to AI Tech section) ============
